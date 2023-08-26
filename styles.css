@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&display=swap');
+
+body {
+  font-family: 'Noticia Text', serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgba(135,203,38,1) 0%, rgba(13,104,180,1) 100%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 165%;
+  height: 165%;
+  z-index: -1;
+  transform: rotate(-30deg);
+  background-image: url('TEXTO!.png');
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.card {
+  /* background-image: url('Card.png');
+  background-size: contain; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: solid 4px;
+  border-color: rgb(189, 204, 217);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 20em;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardImg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* 
+.game {
+  margin-top: 20px;
+  position: absolute;
+  align-items: center;
+}
+*/
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 30px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p#result {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#letter,
+#subject {
+  position: relative;
+  font-size:large;
+  color: #555555;
+  margin: 0px;
+  border: solid 3px #FF9400;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#letter {
+  top: 35%;
+  width: 10%;
+}
+
+#subject {
+  top: 50%;
+  width: 50%;
+}
