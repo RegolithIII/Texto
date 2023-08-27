@@ -18,6 +18,12 @@ const subjects = [
   'Dégoutant'
 ];
 
+const shape = [
+  'Triangle.png',
+  'Circle.png',
+  'Square.png'
+];
+
 function getRandomElement(arr) {
   const randomIndex = Math.floor(Math.random() * arr.length);
   return arr[randomIndex];
@@ -31,14 +37,18 @@ function generateRandomSubject() {
   return getRandomElement(subjects);
 }
 
+function generateRandomShape() {
+  return getRandomElement(shape);
+}
+
 function displayRandomInfo() {
   const letter = generateRandomLetter();
   const subject = generateRandomSubject();
 
   document.getElementById('letter').textContent = `${letter}`;
   document.getElementById('subject').textContent = `${subject}`;
-  document.getElementById('wordInput').value = ''; // Clear input field
-  document.getElementById('result').textContent = ''; // Clear result text
+  /* document.getElementById('wordInput').value = ''; // Clear input field
+  document.getElementById('result').textContent = ''; // Clear result text */
 }
 
 /* function checkWord() {
@@ -60,8 +70,15 @@ document.getElementById('wordInput').addEventListener('keydown', function(event)
   }
 }); */
 
-document.getElementById('restartButton').addEventListener('click', function() {
-  displayRandomInfo(), spin();
+function changeLetterShape() {
+  const shape = generateRandomShape();
+  document.getElementById('letter').style.backgroundImage = 'url('+shape+')';
+}
+
+document.getElementById('restartButton').addEventListener('click',() => {
+  displayRandomInfo();
+  changeLetterShape();
 });
 
+changeLetterShape();
 displayRandomInfo();

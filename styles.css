@@ -101,20 +101,26 @@ p#result {
 #letter,
 #subject {
   position: relative;
-  font-size:large;
   color: #555555;
   margin: 0px;
-  border: solid 3px #FF9400;
-  border-radius: 10px;
   padding: 10px;
 }
 
 #letter {
   width: 10%;
-  top: 30%;
+  top: 38%;
+  font-size: x-large;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  overflow: visible;
+  transform: scale(3);
 }
 
 #subject {
   width: 50%;
   top: 50%;
+  border: solid 3px #FF9400;
+  border-radius: 10px;
+  font-size:large;
 }
