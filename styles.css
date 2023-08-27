@@ -7,7 +7,6 @@ body {
   font-weight: bold;
   background: linear-gradient(90deg, rgba(135,203,38,1) 0%, rgba(13,104,180,1) 100%);
   background-size: 100%;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
