@@ -4,7 +4,7 @@ const subjects = [
   'Fruit',
   'Pays',
   'Objet',
-  'Film',
+  'Film / Série',
   'Métier',
   'Prénoms',
   'Nourriture',
